@@ -1,13 +1,6 @@
-# Snipe-IT Open Source Asset Management Installation script
+# wiki.js Installation script
 
-### Bash script automating the installation of Snipe-IT Open Source Asset Management on Debian 11
-Most of the Snipe-IT specific details, shamelessly lifted from the installation scripts created by Mike Tucker mtucker6784@gmail.com
-
-<img src="./images/snipe-it-logo-xs.png" alt="https://snipeitapp.com/"/>
-
-
-For more information about the awesome Snipe Asset Management Solution, go to https://snipeitapp.com/
-
+### Bash script automating the installation of wiki.js Open Source Asset Management on Debian 11
 
 ## Vagrantfile and bootstrap.sh for use with Vagrant and Virtualbox
 
@@ -21,17 +14,17 @@ For more information about the awesome Snipe Asset Management Solution, go to ht
 
 ### Production Installation
 Prerequisite: A Debian 11 server up and running.
-- Run git clone https://github.com/martinboller/snipeIT-Install.git
-- Change directory into ./snipeIT-Install/
-- Execute ./install-snipe.sh
-- Connect to https://nameofsnipeserver/ in your favorite browser and follow the guide to do the initial configuration of Snipe-IT.
+- Run git clone https://github.com/martinboller/install-wikidotjs
+- Change directory into ./install-wikidotjs
+- Execute ./install-wiki.sh
+- Connect to https://nameofserver/ in your favorite browser and follow the guide to do the initial configuration of wiki.js.
 
-The above procedure should install everything needed to run Snipe-IT.
+The above procedure should install everything needed to run wiki.js.
 
 
 ## Quick installation - If you just want to get on with it
 
->**Important: Do NOT use the process below for production, as Vagrant leaves some unfortunate security artifacts behind. The install-snipe.sh alone can be used on a known secure installation of Debian 11, or you could remove Vagrant artifacts (the former is preferred)**
+>**Important: Do NOT use the process below for production, as Vagrant leaves some unfortunate security artifacts behind. The install-wikidotjs.sh alone can be used on a known secure installation of Debian 11, or you could remove Vagrant artifacts (the former is preferred)**
 
 ### Packages required
 All that is needed to spin up test systems is:
@@ -56,11 +49,10 @@ Prerequisite: A DHCP server on the network, alternatively change the NIC to use 
  - Create a directory with ample space for Virtual Machines, e.g. /mnt/data/VMs
  - Configure VirtualBox to use that directory for Virtual Machines by default.
  - Change directory into /mnt/data/Environments/
- - Run git clone https://github.com/martinboller/snipeIT-Install.git
- - Change directory into /mnt/data/Environments/snipeIT-Install/
+ - Run git clone https://github.com/martinboller/install-wikidotjs.git
+ - Change directory into /mnt/data/Environments/wikidotjsIT-Install/
  - Execute vagrant up simo<sup>1</sup> and wait for the OS to install
 
-<sup>1</sup>https://www.simohayha.com/
 
 You may have to select which NIC to use for this e.g. wl08p01
  
