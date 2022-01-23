@@ -1,6 +1,6 @@
 # wiki.js Installation script
 
-### Bash script automating the installation of wiki.js Open Source Asset Management on Debian 11
+### Bash script automating the installation of wiki.js Wiki server on Debian 11
 
 ## Vagrantfile and bootstrap.sh for use with Vagrant and Virtualbox
 
@@ -24,7 +24,7 @@ The above procedure should install everything needed to run wiki.js.
 
 ## Quick installation - If you just want to get on with it
 
->**Important: Do NOT use the process below for production, as Vagrant leaves some unfortunate security artifacts behind. The install-wikidotjs.sh alone can be used on a known secure installation of Debian 11, or you could remove Vagrant artifacts (the former is preferred)**
+>**Important: Do NOT use the process below for production, as Vagrant leaves some unfortunate security artifacts behind. The install-wiki.sh alone can be used on a known secure installation of Debian 11, or you could remove Vagrant artifacts (the former is preferred)**
 
 ### Packages required
 All that is needed to spin up test systems is:
